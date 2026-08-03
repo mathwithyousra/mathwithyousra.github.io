@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF59D"/>
+      <stop offset="40%" stop-color="#FBC02D"/>
+      <stop offset="100%" stop-color="#F57F17"/>
+    </linearGradient>
+
+    <linearGradient id="goldMedium" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBC02D"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+
+    <linearGradient id="goldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F57F17"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </linearGradient>
+
+    <linearGradient id="wireGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="50%" stop-color="#FBC02D"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+
+    <filter id="coreGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <g transform="translate(250, 250)">
+    <g stroke="url(#wireGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.3" stroke-dasharray="4 4" fill="none">
+      <line x1="-140" y1="35" x2="0" y2="-45" />
+      <line x1="0" y1="-45" x2="140" y2="35" />
+      <line x1="0" y1="-45" x2="0" y2="-195" />
+    </g>
+
+    <g filter="url(#coreGlow)">
+      <polygon points="0,-75 60,-40 0,-5 -60,-40" fill="url(#goldLight)" />
+      <polygon points="-60,-40 0,-5 0,65 -60,30" fill="url(#goldMedium)" />
+      <polygon points="0,-5 60,-40 60,30 0,65" fill="url(#goldDark)" />
+      <polygon points="0,-75 0,-5 60,-40" fill="#FFFDE7" opacity="0.25" />
+    </g>
+
+    <g stroke="url(#wireGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <polygon points="0,-195 140,-115 0,-35 -140,-115" />
+      <line x1="-140" y1="-115" x2="-140" y2="35" />
+      <line x1="0" y1="-35" x2="0" y2="115" />
+      <line x1="140" y1="-115" x2="140" y2="35" />
+      <line x1="-140" y1="35" x2="0" y2="115" />
+      <line x1="140" y1="35" x2="0" y2="115" />
+    </g>
+
+    <g fill="url(#goldLight)" stroke="#BF360C" stroke-width="1.5">
+      <circle cx="0" cy="-195" r="10" />
+      <circle cx="140" cy="-115" r="10" />
+      <circle cx="-140" cy="-115" r="10" />
+      <circle cx="0" cy="-35" r="10" />
+      <circle cx="-140" cy="35" r="10" />
+      <circle cx="140" cy="35" r="10" />
+      <circle cx="0" cy="115" r="10" />
+    </g>
+  </g>
+</svg>
