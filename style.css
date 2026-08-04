@@ -113,47 +113,20 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--maroon); outlin
   text-transform: uppercase;
 }
 
-.sidebar-links {
+/* ---------- Sidebar links (CV / YouTube / LinkedIn) ---------- */
+.sidebar-links-inline {
   display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--mono);
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
-/* ---------- Icon row (CV / YouTube / LinkedIn) ---------- */
-.icon-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.4rem;
-  margin-top: 0.2rem;
-}
-
-.icon-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 1px solid var(--rule);
-  color: var(--maroon);
-  transition: background 0.15s, border-color 0.15s;
-}
-
-.icon-btn:hover {
-  background: var(--maroon);
-  border-color: var(--maroon);
-  color: var(--paper);
-}
-
-.icon-btn svg {
-  width: 17px;
-  height: 17px;
-  fill: currentColor;
+.sidebar-links-inline .dot {
+  color: var(--rule);
 }
 
 /* ---------- Main content ---------- */
