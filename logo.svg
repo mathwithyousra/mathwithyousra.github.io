@@ -1,86 +1,68 @@
-<svg xmlns="http://w3.org" viewBox="-1000 -1000 2000 2000" width="100%" height="100%">
-    <style>
-        .bg-disk { fill: #ffffff; }
-        .horizon { fill: none; stroke: #3c1053; stroke-width: 14; }
-        .axis { fill: none; stroke: #3c1053; stroke-width: 6; }
-        .geodesic-p1 { fill: none; stroke: #3c1053; stroke-width: 6; }
-        .geodesic-p2 { fill: none; stroke: #3c1053; stroke-width: 4; }
-        .geodesic-p3 { fill: none; stroke: #3c1053; stroke-width: 3; }
-    </style>
-
+<svg xmlns="http://w3.org" viewBox="-1000 -1000 2000 2000">
     <!-- Base Hyperbolic Disk Background -->
-    <circle cx="0" cy="0" r="950" class="bg-disk" />
+    <circle cx="0" cy="0" r="950" fill="#ffffff" />
 
     <!-- Order-4 Axes (Orthogonal Straight Lines Passing Through Origin) -->
-    <line x1="0" y1="-950" x2="0" y2="950" class="axis" />
-    <line x1="-950" y1="0" x2="950" y2="0" class="axis" />
+    <line x1="0" y1="-950" x2="0" y2="950" stroke="#3c1053" stroke-width="14" />
+    <line x1="-950" y1="0" x2="950" y2="0" stroke="#3c1053" stroke-width="14" />
 
     <!-- Order-8 Diagonal Straight Axes -->
-    <line x1="-671.75" y1="-671.75" x2="671.75" y2="671.75" class="axis" />
-    <line x1="-671.75" y1="671.75" x2="671.75" y2="-671.75" class="axis" />
+    <line x1="-671.75" y1="-671.75" x2="671.75" y2="671.75" stroke="#3c1053" stroke-width="12" />
+    <line x1="-671.75" y1="671.75" x2="671.75" y2="-671.75" stroke="#3c1053" stroke-width="12" />
 
     <!-- ==================== PRIMARY GEODESIC LAYER 1 ==================== -->
-    <!-- Principal Circular Arcs Orthogonal to the Horizon Circle -->
-    <!-- R = 671.75, Center Distance d = 1163.51 -->
-    <!-- Arcs centered on North, South, East, West axes -->
-    <path d="M -671.75,-671.75 A 671.75 671.75 0 0 1 671.75,-671.75" class="geodesic-p1" />
-    <path d="M 671.75,-671.75 A 671.75 671.75 0 0 1 671.75,671.75" class="geodesic-p1" />
-    <path d="M 671.75,671.75 A 671.75 671.75 0 0 1 -671.75,671.75" class="geodesic-p1" />
-    <path d="M -671.75,671.75 A 671.75 671.75 0 0 1 -671.75,-671.75" class="geodesic-p1" />
+    <path d="M -671.75,-671.75 A 671.75 671.75 0 0 1 671.75,-671.75" fill="none" stroke="#3c1053" stroke-width="12" />
+    <path d="M 671.75,-671.75 A 671.75 671.75 0 0 1 671.75,671.75" fill="none" stroke="#3c1053" stroke-width="12" />
+    <path d="M 671.75,671.75 A 671.75 671.75 0 0 1 -671.75,671.75" fill="none" stroke="#3c1053" stroke-width="12" />
+    <path d="M -671.75,671.75 A 671.75 671.75 0 0 1 -671.75,-671.75" fill="none" stroke="#3c1053" stroke-width="12" />
 
-    <!-- Arcs centered on the 45-degree diagonal axes -->
-    <path d="M 0,-950 A 671.75 671.75 0 0 1 950,0" class="geodesic-p1" />
-    <path d="M 950,0 A 671.75 671.75 0 0 1 0,950" class="geodesic-p1" />
-    <path d="M 0,950 A 671.75 671.75 0 0 1 -950,0" class="geodesic-p1" />
-    <path d="M -950,0 A 671.75 671.75 0 0 1 0,-950" class="geodesic-p1" />
+    <path d="M 0,-950 A 671.75 671.75 0 0 1 950,0" fill="none" stroke="#3c1053" stroke-width="12" />
+    <path d="M 950,0 A 671.75 671.75 0 0 1 0,950" fill="none" stroke="#3c1053" stroke-width="12" />
+    <path d="M 0,950 A 671.75 671.75 0 0 1 -950,0" fill="none" stroke="#3c1053" stroke-width="12" />
+    <path d="M -950,0 A 671.75 671.75 0 0 1 0,-950" fill="none" stroke="#3c1053" stroke-width="12" />
 
     <!-- ==================== GEODESIC LENS LAYER 2 ==================== -->
-    <!-- Concentric Intersecting Secondary Structural Reflection Arcs -->
-    <!-- R = 393.51, Center Distance d = 1028.32 -->
-    <path d="M -393.51,-393.51 A 393.51 393.51 0 0 0 393.51,-393.51" class="geodesic-p2" />
-    <path d="M 393.51,-393.51 A 393.51 393.51 0 0 0 393.51,393.51" class="geodesic-p2" />
-    <path d="M 393.51,393.51 A 393.51 393.51 0 0 0 -393.51,393.51" class="geodesic-p2" />
-    <path d="M -393.51,393.51 A 393.51 393.51 0 0 0 -393.51,-393.51" class="geodesic-p2" />
+    <path d="M -393.51,-393.51 A 393.51 393.51 0 0 0 393.51,-393.51" fill="none" stroke="#3c1053" stroke-width="8" />
+    <path d="M 393.51,-393.51 A 393.51 393.51 0 0 0 393.51,393.51" fill="none" stroke="#3c1053" stroke-width="8" />
+    <path d="M 393.51,393.51 A 393.51 393.51 0 0 0 -393.51,393.51" fill="none" stroke="#3c1053" stroke-width="8" />
+    <path d="M -393.51,393.51 A 393.51 393.51 0 0 0 -393.51,-393.51" fill="none" stroke="#3c1053" stroke-width="8" />
 
-    <path d="M -548.50,0 A 393.51 393.51 0 0 1 0,-548.50" class="geodesic-p2" />
-    <path d="M 0,-548.50 A 393.51 393.51 0 0 1 548.50,0" class="geodesic-p2" />
-    <path d="M 548.50,0 A 393.51 393.51 0 0 1 0,548.50" class="geodesic-p2" />
-    <path d="M 0,548.50 A 393.51 393.51 0 0 1 -548.50,0" class="geodesic-p2" />
+    <path d="M -548.50,0 A 393.51 393.51 0 0 1 0,-548.50" fill="none" stroke="#3c1053" stroke-width="8" />
+    <path d="M 0,-548.50 A 393.51 393.51 0 0 1 548.50,0" fill="none" stroke="#3c1053" stroke-width="8" />
+    <path d="M 548.50,0 A 393.51 393.51 0 0 1 0,548.50" fill="none" stroke="#3c1053" stroke-width="8" />
+    <path d="M 0,548.50 A 393.51 393.51 0 0 1 -548.50,0" fill="none" stroke="#3c1053" stroke-width="8" />
 
     <!-- ==================== TESSALATION BOUNDARY LAYER 3 ==================== -->
-    <!-- Fine-scale perimeter hyperbolic reflections generating the fractal boundary -->
-    <!-- R = 185.34, Center Distance d = 967.92 -->
     <!-- Quad 1 -->
-    <circle cx="918.23" cy="301.76" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="797.11" cy="543.08" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="598.66" cy="753.51" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="334.34" cy="902.11" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
+    <circle cx="918.23" cy="301.76" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="797.11" cy="543.08" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="598.66" cy="753.51" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="334.34" cy="902.11" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
 
     <!-- Quad 2 -->
-    <circle cx="-334.34" cy="902.11" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="-598.66" cy="753.51" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="-797.11" cy="543.08" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="-918.23" cy="301.76" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
+    <circle cx="-334.34" cy="902.11" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="-598.66" cy="753.51" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="-797.11" cy="543.08" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="-918.23" cy="301.76" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
 
     <!-- Quad 3 -->
-    <circle cx="-918.23" cy="-301.76" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="-797.11" cy="-543.08" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="-598.66" cy="-753.51" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="-334.34" cy="-902.11" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
+    <circle cx="-918.23" cy="-301.76" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="-797.11" cy="-543.08" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="-598.66" cy="-753.51" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="-334.34" cy="-902.11" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
 
     <!-- Quad 4 -->
-    <circle cx="334.34" cy="-902.11" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="598.66" cy="-753.51" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="797.11" cy="-543.08" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
-    <circle cx="918.23" cy="-301.76" r="148.20" fill="none" stroke="#3c1053" stroke-width="2" />
+    <circle cx="334.34" cy="-902.11" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="598.66" cy="-753.51" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="797.11" cy="-543.08" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
+    <circle cx="918.23" cy="-301.76" r="148.20" fill="none" stroke="#3c1053" stroke-width="4" />
 
     <!-- Micro-Perimeter Horizon Geodesic Rim Arcs -->
-    <path d="M -922.31,-228.32 A 96.5 96.5 0 0 1 -922.31,228.32" class="geodesic-p3" />
-    <path d="M 922.31,-228.32 A 96.5 96.5 0 0 0 922.31,228.32" class="geodesic-p3" />
-    <path d="M -228.32,-922.31 A 96.5 96.5 0 0 1 228.32,-922.31" class="geodesic-p3" />
-    <path d="M -228.32,922.31 A 96.5 96.5 0 0 0 228.32,922.31" class="geodesic-p3" />
+    <path d="M -922.31,-228.32 A 96.5 96.5 0 0 1 -922.31,228.32" fill="none" stroke="#3c1053" stroke-width="3" />
+    <path d="M 922.31,-228.32 A 96.5 96.5 0 0 0 922.31,228.32" fill="none" stroke="#3c1053" stroke-width="3" />
+    <path d="M -228.32,-922.31 A 96.5 96.5 0 0 1 228.32,-922.31" fill="none" stroke="#3c1053" stroke-width="3" />
+    <path d="M -228.32,922.31 A 96.5 96.5 0 0 0 228.32,922.31" fill="none" stroke="#3c1053" stroke-width="3" />
 
     <!-- ==================== THE BOUNDARY HORIZON ==================== -->
-    <!-- The Absolute Conic / Asymptotic Boundary Limit Circle -->
-    <circle cx="0" cy="0" r="950" class="horizon" />
+    <circle cx="0" cy="0" r="950" fill="none" stroke="#3c1053" stroke-width="20" />
 </svg>
