@@ -123,6 +123,39 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--maroon); outlin
   letter-spacing: 0.05em;
 }
 
+/* ---------- Icon row (CV / YouTube / LinkedIn) ---------- */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: 0.2rem;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  color: var(--maroon);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.icon-btn:hover {
+  background: var(--maroon);
+  border-color: var(--maroon);
+  color: var(--paper);
+}
+
+.icon-btn svg {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+}
+
 /* ---------- Main content ---------- */
 .content h1 {
   font-family: var(--serif-display);
