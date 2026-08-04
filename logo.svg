@@ -1,0 +1,26 @@
+<div class="brand-header">
+    <!-- Poincaré Disk Hyperbolic Logo Asset -->
+    <svg class="logo" viewBox="0 0 100 100" xmlns="http://w3.org">
+        <!-- Outer Horizon Circle -->
+        <circle cx="50" cy="50" r="48" fill="none" stroke="#3c1053" stroke-width="1.5"/>
+        
+        <!-- Principal Orthogonal Axes -->
+        <line x1="50" y1="2" x2="50" y2="98" stroke="#3c1053" stroke-width="0.8"/>
+        <line x1="2" y1="50" x2="98" y2="50" stroke="#3c1053" stroke-width="0.8"/>
+        
+        <!-- Diagonal Structural Geodesics -->
+        <line x1="16.1" y1="16.1" x2="83.9" y2="83.9" stroke="#3c1053" stroke-width="0.6" stroke-dasharray="1,1"/>
+        <line x1="16.1" y1="83.9" x2="83.9" y2="16.1" stroke="#3c1053" stroke-width="0.6" stroke-dasharray="1,1"/>
+        
+        <!-- Primary Hyperbolic Reflection Arcs -->
+        <path d="M 50,2 A 48,48 0 0,0 98,50" fill="none" stroke="#3c1053" stroke-width="0.8"/>
+        <path d="M 98,50 A 48,48 0 0,0 50,98" fill="none" stroke="#3c1053" stroke-width="0.8"/>
+        <path d="M 50,98 A 48,48 0 0,0 2,50" fill="none" stroke="#3c1053" stroke-width="0.8"/>
+        <path d="M 2,50 A 48,48 0 0,0 50,2" fill="none" stroke="#3c1053" stroke-width="0.8"/>
+        
+        <!-- Interior Stabilizer Loci -->
+        <circle cx="50" cy="50" r="16" fill="none" stroke="#3c1053" stroke-width="0.6"/>
+        <circle cx="50" cy="50" r="32" fill="none" stroke="#3c1053" stroke-width="0.4"/>
+    </svg>
+    <h1>Yousra Al-Idrisi</h1>
+</div>
