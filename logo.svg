@@ -1,0 +1,77 @@
+<svg xmlns="http://w3.org" viewBox="-1000 -1000 2000 2000" width="100%" height="100%">
+    <style>
+        .bg-disk { fill: #fbfaf7; }
+        .horizon { fill: none; stroke: #3c1053; stroke-width: 14; }
+        .geodesic-p1 { fill: none; stroke: #3c1053; stroke-width: 12; stroke-linecap: round; }
+        .geodesic-p2 { fill: none; stroke: #3c1053; stroke-width: 8; stroke-linecap: round; }
+        .geodesic-p3 { fill: none; stroke: #3c1053; stroke-width: 5; stroke-linecap: round; }
+        .geodesic-p4 { fill: none; stroke: #3c1053; stroke-width: 3; stroke-linecap: round; }
+    </style>
+
+    <!-- Base Hyperbolic Disk Background -->
+    <circle cx="0" cy="0" r="950" class="bg-disk" />
+
+    <!-- ==================== CENTRAL PENTAGON GEODESICS (LAYER 1) ==================== -->
+    <!-- 5 Principal Hyperbolic Arcs creating the central regular pentagon {5,4} -->
+    <!-- Radius R = 1117.39, Center Distance d = 1466.86 -->
+    <!-- Rotational offset matches a standard vertex-up regular orientation -->
+    <path d="M -294.61,-378.10 A 1117.39 1117.39 0 0 1 294.61,-378.10" class="geodesic-p1" />
+    <path d="M 294.61,-378.10 A 1117.39 1117.39 0 0 1 476.32,181.18" class="geodesic-p1" />
+    <path d="M 476.32,181.18 A 1117.39 1117.39 0 0 1 0,527.10" class="geodesic-p1" />
+    <path d="M 0,527.10 A 1117.39 1117.39 0 0 1 -476.32,181.18" class="geodesic-p1" />
+    <path d="M -476.32,181.18 A 1117.39 1117.39 0 0 1 -294.61,-378.10" class="geodesic-p1" />
+
+    <!-- ==================== REFLECTION TIER 2 (10 INTERSECTIONS) ==================== -->
+    <!-- Secondary Geodesics generating the first ring of surrounding pentagons -->
+    <!-- Radius R = 445.64, Center Distance d = 1048.97 -->
+    <path d="M -598.05,-310.87 A 445.64 445.64 0 0 0 -137.91,-637.89" class="geodesic-p2" />
+    <path d="M 137.91,-637.89 A 445.64 445.64 0 0 0 598.05,-310.87" class="geodesic-p2" />
+    <path d="M 649.33,-153.03 A 445.64 445.64 0 0 0 710.23,341.24" class="geodesic-p2" />
+    <path d="M 581.42,491.56 A 445.64 445.64 0 0 0 185.03,800.74" class="geodesic-p2" />
+    <path d="M -185.03,800.74 A 445.64 445.64 0 0 0 -581.42,491.56" class="geodesic-p2" />
+    <path d="M -710.23,341.24 A 445.64 445.64 0 0 0 -649.33,-153.03" class="geodesic-p2" />
+    
+    <!-- Secondary Cross-Linking Orbits -->
+    <!-- Radius R = 239.11, Center Distance d = 979.62 -->
+    <path d="M -476.32,181.18 A 239.11 239.11 0 0 1 -294.61,-378.10" class="geodesic-p2" />
+    <path d="M 294.61,-378.10 A 239.11 239.11 0 0 1 476.32,181.18" class="geodesic-p2" />
+    <path d="M 476.32,181.18 A 239.11 239.11 0 0 1 0,527.10" class="geodesic-p2" />
+    <path d="M 0,527.10 A 239.11 239.11 0 0 1 -476.32,181.18" class="geodesic-p2" />
+
+    <!-- ==================== TESSALATION RING TIER 3 ==================== -->
+    <!-- Recursive Hyperbolic arcs branching outward toward the boundary horizon limit -->
+    <!-- Radius R = 153.82, Center Distance d = 962.33 -->
+    <circle cx="-831.25" cy="-481.54" r="153.82" fill="none" stroke="#3c1053" stroke-width="5" class="geodesic-p3" />
+    <circle cx="-317.51" cy="-894.23" r="153.82" fill="none" stroke="#3c1053" stroke-width="5" class="geodesic-p3" />
+    <circle cx="317.51" cy="-894.23" r="153.82" fill="none" stroke="#3c1053" stroke-width="5" class="geodesic-p3" />
+    <circle cx="831.25" cy="-481.54" r="153.82" fill="none" stroke="#3c1053" stroke-width="5" class="geodesic-p3" />
+    <circle cx="918.23" cy="245.31" r="153.82" fill="none" stroke="#3c1053" stroke-width="5" class="geodesic-p3" />
+    <circle cx="534.51" cy="781.42" r="153.82" fill="none" stroke="#3c1053" stroke-width="5" class="geodesic-p3" />
+    <circle cx="-534.51" cy="781.42" r="153.82" fill="none" stroke="#3c1053" stroke-width="5" class="geodesic-p3" />
+    <circle cx="-918.23" cy="245.31" r="153.82" fill="none" stroke="#3c1053" stroke-width="5" class="geodesic-p3" />
+
+    <!-- ==================== MICRO-PERIMETER ASYMPTOTIC LAYER 4 ==================== -->
+    <!-- Recursive Boundary Geodesic Rings defining the infinite {5,4} limit structure -->
+    <!-- Radius R = 64.21, Center Distance d = 952.16 -->
+    <!-- Uniform distribution across 20 distinct boundary asymptotic angles -->
+    <circle cx="-932.11" cy="-145.02" r="64.21" class="geodesic-p4" />
+    <circle cx="-932.11" cy="145.02" r="64.21" class="geodesic-p4" />
+    <circle cx="-745.32" cy="-420.18" r="64.21" class="geodesic-p4" />
+    <circle cx="-745.32" cy="420.18" r="64.21" class="geodesic-p4" />
+    <circle cx="-450.12" cy="-715.34" r="64.21" class="geodesic-p4" />
+    <circle cx="-450.12" cy="715.34" r="64.21" class="geodesic-p4" />
+    <circle cx="-145.02" cy="-912.11" r="64.21" class="geodesic-p4" />
+    <circle cx="-145.02" cy="912.11" r="64.21" class="geodesic-p4" />
+    <circle cx="145.02" cy="-912.11" r="64.21" class="geodesic-p4" />
+    <circle cx="145.02" cy="912.11" r="64.21" class="geodesic-p4" />
+    <circle cx="450.12" cy="-715.34" r="64.21" class="geodesic-p4" />
+    <circle cx="450.12" cy="715.34" r="64.21" class="geodesic-p4" />
+    <circle cx="745.32" cy="-420.18" r="64.21" class="geodesic-p4" />
+    <circle cx="745.32" cy="420.18" r="64.21" class="geodesic-p4" />
+    <circle cx="932.11" cy="-145.02" r="64.21" class="geodesic-p4" />
+    <circle cx="932.11" cy="145.02" r="64.21" class="geodesic-p4" />
+
+    <!-- ==================== THE BOUNDARY HORIZON ==================== -->
+    <!-- The Absolute Conic / Asymptotic Boundary Boundary Circle S^1 -->
+    <circle cx="0" cy="0" r="950" class="horizon" />
+</svg>
