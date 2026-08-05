@@ -69,10 +69,40 @@
     <p>Every student starts from a different place. Before we focus on assignments or exam preparation, I work to identify the underlying concepts that need strengthening. By addressing those foundations first, students build understanding that lasts beyond a single test or course.</p>
     <p>I've been teaching and tutoring mathematics since 2015 — as a Teaching Assistant at UC Santa Cruz, a tutor at UC Berkeley, and a private tutor throughout that time. Working one-on-one with students has always been one of the most rewarding parts of my career, and I enjoy adapting my teaching approach to each student's background, goals, and learning style.</p>
     <p>If you're interested in working together, I'd be happy to discuss your goals and find a time that works.</p>
-    <div class="coming-soon">
-      Contact form goes here.<br>
-      (Figuring out the best option — Calendly, a simple form, or similar.)
-    </div>
+
+    <form action="https://formspree.io/f/mkjwnblo" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject / Course</label>
+        <input type="text" id="subject" name="subject" placeholder="e.g. AP Calculus BC" required>
+      </div>
+
+      <div class="form-group">
+        <label for="availability">A few days/times that generally work for you</label>
+        <textarea id="availability" name="availability" rows="3" placeholder="e.g. Weekday evenings after 5pm, or Sunday afternoons" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Anything else I should know?</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+      </div>
+
+      <button type="submit">Send Inquiry</button>
+    </form>
   </main>
 </div>
 <footer>&copy; Yousra Al-Idrisi · Math With Yousra</footer>
