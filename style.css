@@ -145,7 +145,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--maroon); outlin
   margin: 0 0 1.8rem;
 }
 
-.content p { margin: 0 0 1.2rem; max-width: 74ch; }
+.content p { margin: 0 0 1.2rem; max-width: 80ch; }
 
 .section-divider {
   border: none;
